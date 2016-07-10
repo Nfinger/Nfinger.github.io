@@ -1,0 +1,280 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	outline: 0;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+h1, h2{
+	font-family: 'Droid Serif', serif;
+}
+
+h1, h3{
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+h4{
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+#menu{
+	position: fixed;
+	border-bottom: 27px solid #560e15;
+	background-color: black;
+	width: 100%;
+	height: 11%;
+	top: -8%;
+	-webkit-transition: top .5s ease;
+	-moz-transition: top .5s ease;
+	transition: top .5s ease;
+	z-index: 1;
+}
+
+#menuButton{
+	width: 100%;
+	z-index: 10;
+	position: absolute;
+}
+
+#menuButtonDiv{
+	width: 5%;
+	left: 47.5%;
+	top: 0;
+	z-index: 10;
+	position: fixed;
+	-webkit-transition: top .5s ease;
+	-moz-transition: top .5s ease;
+	transition: top .5s ease;
+}
+
+#sections{
+	float:right;
+	display: inline;
+	position: relative;
+}
+
+.navItem {
+	padding: 5px;
+	font-weight: 700;
+	color: #dddde6;
+	font-size: 2em;
+	margin-right: 10px;
+	margin-left: 20px;
+	position: relative;
+}
+
+.listNav {
+	display: inline;
+}
+
+#backTop{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	height: 75px;
+}
+
+@media only screen and (max-width: 750px) {
+  #backTop {
+ 	position: fixed;
+	bottom: 5%;
+	right: 45%;
+	height: 65px;
+	z-index: 5;
+  }
+  .sampleWriteDiv{
+  	overflow: scroll;
+  	height: 100%;
+	width: 60%;
+	float: left;
+	margin-left: 50px;
+  }
+}
+
+/*makes every page fill up the window vertically*/
+.page{
+	min-height: 100vh;
+	max-height: 100%;
+	padding-top: 3%;
+	overflow: hidden;
+	padding-bottom:3%;
+}
+
+/*different pages and their backgrounds*/
+#splashPage{
+	top: 7.5%;
+	text-align: center;
+	color: #FFF9F7;
+	background-image: url(portfolio_images/Mountain.jpeg);
+	background-size: cover;
+	font-family: 'Droid Serif', serif;
+}
+
+#bioPage{
+	background-size: cover;
+	background-color: black;
+	color: white;
+}
+
+#resumePage{
+	background-size: cover;
+	background-color: white;
+	color: black;
+}
+
+#projectPage{
+	background-size:cover;	
+	background-color: black;
+	color: white;
+}
+
+#contactPage{
+	background-size:cover;
+	text-align: center;
+}
+
+/*Bio Page Stuff*/
+#bioAll{
+	float: left;
+}
+
+#profPicdiv{
+	height: 80vh;
+}
+
+#profPic{
+	height: 100%;
+	position: relative;
+	left:20%;
+	padding-right: 50px;
+}
+
+.profPara{
+	position: relative;
+	left:50px;
+	padding-left: 50px;
+	width: 80%;
+}
+
+.profList{
+	display: inline-block;
+	position: relative;
+	left: 50px;
+}
+
+/*Section for sample Projects*/
+
+.projectRow{
+	width: 100%;
+	min-height: 150px;
+	max-height: 250px;
+	height: 10%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.sampleWork{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+}
+
+.sampleIconDiv {
+	width: 25%;
+	float: left;
+}
+
+.sampleIcon{
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	margin: 0 auto;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	
+}
+
+.sampleIcon:hover{
+	/*opacity: .1;*/
+	left: -50px;
+	background-color: #da0000;
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+
+}
+
+.sampleWriteDiv{
+	height: 100%;
+	width: 60%;
+	float: left;
+	margin-left: 50px;
+}
+
+/*contact page stuff*/
+
+#contactBox{
+	padding: 25px;
+	border-radius: 40px;
+	background-color: black;
+	color: white;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	height: 85vh;
+}
+
+
+.contactPara{
+	padding-top: 3%;
+	font-weight: 700;
+	font-size: 1.4em;
+	text-indent: 0px;
+}
+
+#contactHeading{
+	font-weight: 800;
+	font-size: 30px;
+	margin-top: 10%;
+}
+
+.contactSpan {
+	text-decoration: underline;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.contactWhole{
+	width: 80%;
+	height: 100vh;
+}
+
+.contactEmail{
+	float: left;
+	border: 2px solid blue;
+	width: 50%;
+	height: 80%;
+}
+
+.contactInfo{
+	text-indent: 0px;
+}
+
+
+
